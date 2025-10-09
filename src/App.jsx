@@ -1,5 +1,6 @@
+import { RouterProvider } from 'react-router'
 import './App.css'
-import Navbar from './Navbar/Navbar'
+import router from './Routes/Routes'
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
 
     <div className='max-w-[1200px] mx-auto'>
-      <Navbar></Navbar>
+      <RouterProvider router={router}></RouterProvider>
     </div>
 
   )
