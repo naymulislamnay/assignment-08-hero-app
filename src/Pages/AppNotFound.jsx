@@ -1,10 +1,6 @@
-import React from 'react'
-import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
-import { Link } from 'react-router'
+import React from 'react';
 
-const ErrorPage = () => {
-
+const AppNotFound = () => {
     return (
         <div>
             <Navbar />
@@ -18,15 +14,10 @@ const ErrorPage = () => {
                         The page you are looking for is not available.
                     </p>
                 </div>
-                <div className='w-fit mx-auto'>
-                    <Link to='/'>
-                        <button className="btn btn-soft mt-[30px] bg-gradient-to-br from-[#632EE3] to-[#9F62F2] border-none">Go Back</button>
-                    </Link>
-                </div>
             </div>
             <Footer />
         </div>
-    )
-}
+    );
+};
 
-export default ErrorPage
+export default AppNotFound;

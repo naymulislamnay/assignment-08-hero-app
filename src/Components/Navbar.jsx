@@ -18,7 +18,10 @@ const Navbar = () => {
                         <li><NavLink to='/installed-apps'>Installation</NavLink></li>
                     </ul>
                 </div>
-                <Link to='/' className="font-bold text-[10px] sm:[15px] md:text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">HERO.IO</Link>
+                <Link to='/' className="font-bold text-[10px] sm:[15px] md:text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent flex items-center">
+                    <img src="/src/assets/logo.png" className='w-[30px]' alt="" />
+                    HERO.IO
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
