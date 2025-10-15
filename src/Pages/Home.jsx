@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
+import useAppsData from '../../hooks/useAppsData';
+import AppCard from '../Components/AppCard';
 
 const Home = () => {
+    const { loading, apps } = useAppsData();
+
+    const trendingApps = apps.slice(0, 8);
+
     return (
         <div>
             <div className='text-center pt-15'>
@@ -74,10 +80,21 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div className='mt-[30px]'>
-                    Trending card showed here
-                </div>
 
+                {
+                    loading ? ('Loading...') : (
+                        <div className="mt-[30px] grid grid-cols-4 gap-2.5">
+                            {
+                                trendingApps.map(app => (
+                                    <AppCard key={app.id} app={app}></AppCard>
+                                ))
+                            }
+                        </div>
+                    )
+                }
+
+
+                {/* this button will show all the apps */}
                 <Link to='/all-apps'>
                     <button className="btn btn-soft mt-[30px] bg-gradient-to-br from-[#632EE3] to-[#9F62F2] border-none">Show All</button>
                 </Link>

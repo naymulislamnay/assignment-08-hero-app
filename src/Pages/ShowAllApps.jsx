@@ -1,9 +1,13 @@
 import React from 'react';
 import SearchBox from '../Components/SearchBox';
 import AppCard from '../Components/AppCard';
-import appData from '../../public/appData.json';
+import useAppsData from '../../hooks/useAppsData';
+
 
 const ShowAllApps = () => {
+    const { apps, loading } = useAppsData();
+
+
     return (
         <div>
             <div className='mt-15 text-center'>
@@ -17,12 +21,22 @@ const ShowAllApps = () => {
             <div className='mt-[30px]'>
                 <div className='flex justify-between'>
                     <p>
-                        ({appData.length}) Apps Found
+                        ({apps.length}) Apps Found
                     </p>
                     <SearchBox></SearchBox>
                 </div>
                 <div className='mt-3'>
-                    <AppCard></AppCard>
+                    {
+                        loading ? ('Loading...') : (
+                            <div className="grid grid-cols-4 gap-2.5">
+                                {
+                                    apps.map(app => (
+                                        <AppCard key={app.id} app={app}></AppCard>
+                                    ))
+                                }
+                            </div>
+                        )
+                    }
                 </div>
             </div>
         </div>
