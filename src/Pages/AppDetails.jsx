@@ -1,7 +1,8 @@
 import React from 'react';
 import useAppsData from '../../hooks/useAppsData';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import RatingsGraph from '../Components/RattingsGraph';
+import { updateInstalled } from '../../local/localStorage';
 
 const AppDetails = () => {
     const { id } = useParams();
@@ -26,21 +27,21 @@ const AppDetails = () => {
                     <div className='flex gap-4.5 w-fit'>
                         <div>
                             <img src="../../src/assets/icon-downloads.png" className='max-w-[30px]' alt="" />
-                            <p className='text-[12px text-[#627382]'>Downloads</p>
+                            <p className='text-[12px] text-[#627382]'>Downloads</p>
                             <h3 className='text-[#001931] font-extrabold text-[30px]'>{downloads}</h3>
                         </div>
                         <div>
                             <img src="../../src/assets/icon-ratings.png" className='max-w-[30px]' alt="" />
-                            <p className='text-[12px text-[#627382]'>Average Ratings</p>
+                            <p className='text-[12px] text-[#627382]'>Average Ratings</p>
                             <h3 className='text-[#001931] font-extrabold text-[30px]'>{ratingAvg}</h3>
                         </div>
                         <div>
                             <img src="../../src/assets/icon-review.png" className='max-w-[30px]' alt="" />
-                            <p className='text-[12px text-[#627382]'>Total Reviews</p>
+                            <p className='text-[12px] text-[#627382]'>Total Reviews</p>
                             <h3 className='text-[#001931] font-extrabold text-[30px]'>{reviews}</h3>
                         </div>
                     </div>
-                    <button className='bg-[#05a773] text-white py-[11px] px-4 rounded-lg text-[16px] hover:cursor-pointer w-fit'>
+                    <button onClick={() => updateInstalled(app)} className='bg-[#05a773] text-white py-[11px] px-4 rounded-lg text-[16px] hover:cursor-pointer w-fit'>
                         Install Now (<span>{size}</span> MB)
                     </button>
                 </div>
@@ -59,6 +60,9 @@ const AppDetails = () => {
                     {description}
                 </p>
             </div>
+            <Link to='/all-apps' className='flex'>
+                <button className="btn btn-soft mt-[30px] bg-gradient-to-br from-[#632EE3] to-[#9F62F2] border-none mx-auto w-fit">Back</button>
+            </Link>
         </div>
     );
 };
