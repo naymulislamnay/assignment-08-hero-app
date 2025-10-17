@@ -32,3 +32,9 @@ export const removeFromInstalled = id => {
         console.log(err)
     }
 }
+
+
+export const isInstalled = (id) => {
+    const installed = JSON.parse(localStorage.getItem('installed')) || [];
+    return installed.some(app => app.id === id);
+}

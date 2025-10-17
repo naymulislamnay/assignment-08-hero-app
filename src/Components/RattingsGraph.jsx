@@ -9,10 +9,10 @@ const RatingsGraph = ({ ratings }) => {
             <ResponsiveContainer>
                 <BarChart
                     data={ratings}
-                    layout="vertical"
+                    layout="vertical" className="text-[12px] md:text-[14px] lg:text-[16px]"
                 >
-                    <XAxis type="number" />
-                    <YAxis type="category" dataKey="name" reversed />
+                    <XAxis type="number" className="text-[12px] md:text-[14px] lg:text-[16px]" />
+                    <YAxis type="category" dataKey="name" reversed className="text-[12px] md:text-[14px] lg:text-[16px]" />
                     <Tooltip />
                     <Bar dataKey="count" fill="#8884d8" barSize={20}>
                         {ratings.map((entry, index) => (
