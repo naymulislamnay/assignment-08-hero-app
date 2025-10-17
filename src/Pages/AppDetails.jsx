@@ -36,17 +36,17 @@ const AppDetails = () => {
                     <hr className='text-[#62738290] w-full' />
                     <div className='flex gap-4.5 w-fit'>
                         <div>
-                            <img src="../../src/assets/icon-downloads.png" className='w-[16px] md:w-[24px] lg:w-[30px]' alt="" />
+                            <img src="/icon-downloads.png" className='w-[16px] md:w-[24px] lg:w-[30px]' alt="" />
                             <p className='text-[8px] md:text-[10px] lg:text-[12px] text-[#627382]'>Downloads</p>
                             <h3 className='text-[#001931] font-extrabold text-[16px] md:text-[24px] lg:text-[30px]'>{formatNumbers(downloads)}</h3>
                         </div>
                         <div>
-                            <img src="../../src/assets/icon-ratings.png" className='w-[16px] md:w-[24px] lg:w-[30px]' alt="" />
+                            <img src="/icon-ratings.png" className='w-[16px] md:w-[24px] lg:w-[30px]' alt="" />
                             <p className='text-[8px] md:text-[10px] lg:text-[12px] text-[#627382]'>Average Ratings</p>
                             <h3 className='text-[#001931] font-extrabold text-[16px] md:text-[30px]'>{ratingAvg}</h3>
                         </div>
                         <div>
-                            <img src="../../src/assets/icon-review.png" className='w-[16px] md:w-[24px] lg:w-[30px]' alt="" />
+                            <img src="/icon-review.png" className='w-[16px] md:w-[24px] lg:w-[30px]' alt="" />
                             <p className='text-[8px] md:text-[10px] lg:text-[12px] text-[#627382]'>Total Reviews</p>
                             <h3 className='text-[#001931] font-extrabold text-[16px] md:text-[30px]'>{formatNumbers(reviews)}</h3>
                         </div>

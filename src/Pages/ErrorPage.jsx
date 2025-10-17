@@ -9,7 +9,7 @@ const ErrorPage = () => {
         <div>
             <Navbar />
             <div>
-                <img src="/src/assets/error-404.png" className='w-fit mx-auto mt-5 md:mt-10 lg:mt-15 px-10 lg:px-0' alt="" />
+                <img src="/error-404.png" className='w-fit mx-auto mt-5 md:mt-10 lg:mt-15 px-10 lg:px-0' alt="" />
                 <div className='text-center'>
                     <h2 className='text-2xl md:text-[30px] lg:text-[36px] text-[#001931] font-bold'>
                         Oops, page not found!

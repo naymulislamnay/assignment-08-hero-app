@@ -17,16 +17,16 @@ const Home = () => {
                 </p>
                 <div className='flex gap-2.5 w-fit mx-auto mt-3 md:mt-5 lg:mt-7.5'>
                     <a href='https://play.google.com/store/' className="btn btn-soft text-[10px] md:text-[12px] lg:text-[16px] bg-white text-[#001931] font-semibold border-gray-400">
-                        <img src="/src/assets/PlayStoreLogo.png" className='w-3 md:w-6' alt="" />
+                        <img src="/PlayStoreLogo.png" className='w-3 md:w-6' alt="" />
                         Google Play
                     </a>
                     <a href='https://www.apple.com/app-store/' className="btn btn-soft text-[10px] md:text-[12px] lg:text-[16px] bg-white text-[#001931] font-semibold border-gray-400">
-                        <img src="/src/assets/AppStoreLogo.png" className='w-3 md:w-6' alt="" />
+                        <img src="/AppStoreLogo.png" className='w-3 md:w-6' alt="" />
                         App Store
                     </a>
                 </div>
                 <div className='mx-auto px-2 w-fit mt-3 md:mt-5 lg:mt-7.5'>
-                    <img src="/src/assets/hero.png" alt="" />
+                    <img src="/hero.png" alt="" />
                 </div>
             </div>
             <div className='bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-center pt-5 md:pt-10 lg:pt-15 pb-5 md:pb-10 lg:pb-15'>

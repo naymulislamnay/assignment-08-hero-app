@@ -69,11 +69,11 @@ const Installation = () => {
                                         <h2 className='text-[10px] font-bold md:text-[12px] lg:text-[16px]'>{app.title}</h2>
                                         <div className='flex items-center gap-3'>
                                             <div className='flex items-center gap-1 text-[#00D390]'>
-                                                <img src="../../src/assets/icon-downloads.png" className='max-w-[30px] h-fit w-2 md:w-3' />
+                                                <img src="/icon-downloads.png" className='max-w-[30px] h-fit w-2 md:w-3' />
                                                 <h3 className='font-extrabold text-[8px] md:text-[10px] lg:text-[12px]'>{formatNumbers(app.downloads)}</h3>
                                             </div>
                                             <div className='flex items-center gap-1 text-[#FF8811]'>
-                                                <img src="../../src/assets/icon-ratings.png" className='max-w-[30px] h-fit w-2 md:w-3' />
+                                                <img src="/icon-ratings.png" className='max-w-[30px] h-fit w-2 md:w-3' />
                                                 <h3 className='font-extrabold text-[8px] md:text-[10px] lg:text-[12px]'>{app.ratingAvg}</h3>
                                             </div>
                                             <p className='text-[#627382] text-[8px] md:text-[10px] lg:text-[12px]'>
