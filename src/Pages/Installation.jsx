@@ -66,14 +66,11 @@ const Installation = () => {
                                 <div className='flex items-center gap-3'>
                                     <img src={app.image} alt={app.title} className='w-[40px] md:w-[50px] lg:w-[60px] rounded-lg' />
                                     <div className='flex flex-col gap-2'>
-                                        <h2 className='text-[10px] md:text-[12px] lg:text-[16px]'>{app.title}</h2>
+                                        <h2 className='text-[10px] font-bold md:text-[12px] lg:text-[16px]'>{app.title}</h2>
                                         <div className='flex items-center gap-3'>
                                             <div className='flex items-center gap-1 text-[#00D390]'>
                                                 <img src="../../src/assets/icon-downloads.png" className='max-w-[30px] h-fit w-2 md:w-3' />
-                                                <h3 className='font-extrabold text-[8px] md:text-[10px] lg:text-[12px]'>{
-
-                                                    formatNumbers(app.downloads)
-                                                }</h3>
+                                                <h3 className='font-extrabold text-[8px] md:text-[10px] lg:text-[12px]'>{formatNumbers(app.downloads)}</h3>
                                             </div>
                                             <div className='flex items-center gap-1 text-[#FF8811]'>
                                                 <img src="../../src/assets/icon-ratings.png" className='max-w-[30px] h-fit w-2 md:w-3' />

@@ -16,14 +16,14 @@ const Home = () => {
                     At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.
                 </p>
                 <div className='flex gap-2.5 w-fit mx-auto mt-3 md:mt-5 lg:mt-7.5'>
-                    <button className="btn btn-soft text-[10px] md:text-[12px] lg:text-[16px] bg-white text-[#001931] font-semibold border-gray-400">
+                    <a href='https://play.google.com/store/' className="btn btn-soft text-[10px] md:text-[12px] lg:text-[16px] bg-white text-[#001931] font-semibold border-gray-400">
                         <img src="/src/assets/PlayStoreLogo.png" className='w-3 md:w-6' alt="" />
                         Google Play
-                    </button>
-                    <button className="btn btn-soft text-[10px] md:text-[12px] lg:text-[16px] bg-white text-[#001931] font-semibold border-gray-400">
+                    </a>
+                    <a href='https://www.apple.com/app-store/' className="btn btn-soft text-[10px] md:text-[12px] lg:text-[16px] bg-white text-[#001931] font-semibold border-gray-400">
                         <img src="/src/assets/AppStoreLogo.png" className='w-3 md:w-6' alt="" />
                         App Store
-                    </button>
+                    </a>
                 </div>
                 <div className='mx-auto px-2 w-fit mt-3 md:mt-5 lg:mt-7.5'>
                     <img src="/src/assets/hero.png" alt="" />

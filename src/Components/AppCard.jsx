@@ -14,7 +14,7 @@ const AppCard = ({ app }) => {
                     <div>
                         <img src={image} className='rounded-lg' alt="" />
                     </div>
-                    <p className='text-[#001931] text-left font-medium text-[10px] md:text-[12px] lg:text-[16px] mt-1 md:mt-2 lg:mt-3'>
+                    <p className='text-[#001931] text-left font-bold text-[10px] md:text-[12px] lg:text-[16px] mt-1 md:mt-2 lg:mt-3'>
                         {title}
                     </p>
                     <div className='flex justify-between items-center mt-1 md:mt-2 lg:mt-3'>
