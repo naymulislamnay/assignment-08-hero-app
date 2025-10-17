@@ -37,7 +37,7 @@ const ShowAllApps = () => {
                         loading ? ('Loading...') : searchedApps.length === 0 ? (
                             <div>
                                 <div>
-                                    <img src="/src/assets/App-Error.png" className='w-fit mx-auto mt-5 md:mt-10 lg:mt-15' alt="" />
+                                    <img src="/App-Error.png" className='w-fit mx-auto mt-5 md:mt-10 lg:mt-15' alt="" />
                                     <div className='text-center'>
                                         <h2 className='text-2xl md:text-[30px] lg:text-[36px] text-[#001931] font-bold'>
                                             Oops, App Not found!
